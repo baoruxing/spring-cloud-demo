@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: userservice
+  cloud:
+    config:
+      uri: http://configserver:8888
+      name: userservice
+      profile: dev
+encrypt:
+  failOnError: false
