@@ -7,7 +7,7 @@ import com.brx.test.service.model.User;
  */
 public interface UserDao {
 
-    public int save(User user);
+    int save(User user);
 
-    public User find(String username,String password);
+
 }

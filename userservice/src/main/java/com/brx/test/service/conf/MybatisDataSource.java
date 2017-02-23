@@ -13,7 +13,6 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.annotation.PreDestroy;
-import java.io.IOException;
 
 /**
  * Created by ruxing.bao on 2017/2/22.
