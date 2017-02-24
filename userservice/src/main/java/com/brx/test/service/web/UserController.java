@@ -1,9 +1,12 @@
 package com.brx.test.service.web;
 
 import com.brx.test.service.domain.UserService;
+import com.brx.test.service.model.User;
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -18,9 +21,9 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value="saveUser")
-    public Object saveUser(String username, String password) {
-        int result =  userService.save(username, password);
+    @RequestMapping(value="saveUser",method = RequestMethod.POST)
+    public Object saveUser(@RequestBody User user) {
+        int result =  userService.save(user.getUsername(), user.getPassword());
         Map<String,String> map = new HashMap<String, String>();
         if (result == 1) {
 
