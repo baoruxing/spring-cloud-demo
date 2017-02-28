@@ -15,9 +15,4 @@ logging:
     ROOT: INFO
     org.springframework.web: DEBUG
 
-eureka:
-  client:
-    region: default
-
-    preferSameZone: false
 
