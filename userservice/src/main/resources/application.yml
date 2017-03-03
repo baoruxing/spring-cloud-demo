@@ -1,10 +1,10 @@
 server:
-  port: 9003
+  port: ${server.port:9003}
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://discovery1:8761/eureka/,http://discovery2:8762/eureka/
   instance:
     preferIpAddress: true
 ribbon:

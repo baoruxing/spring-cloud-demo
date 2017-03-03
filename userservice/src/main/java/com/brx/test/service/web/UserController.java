@@ -2,7 +2,6 @@ package com.brx.test.service.web;
 
 import com.brx.test.service.domain.UserService;
 import com.brx.test.service.model.User;
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
