@@ -1,0 +1,23 @@
+server:
+  port: 9982
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+
+  datasource:
+    schema: classpath:/mysql.sql
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+    initialize: true
+    continueOnError: true
+  sleuth:
+    enabled: false
+zipkin:
+  storage:
+    type: mysql

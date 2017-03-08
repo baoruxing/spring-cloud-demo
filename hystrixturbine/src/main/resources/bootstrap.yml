@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: hystrixturbine
+#  cloud:
+#    config:
+#      uri: http://configserver:${config.port:8888}

@@ -5,8 +5,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery1:8761/eureka/,http://discovery2:8762/eureka/
-  instance:
-    preferIpAddress: true
+  #instance:
+  #  preferIpAddress: true
 ribbon:
   eureka:
     enabled: true
