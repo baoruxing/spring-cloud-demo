@@ -1,0 +1,17 @@
+server:
+  port: 8040
+
+eureka:
+  instance:
+    hostname: zuulserver
+  client:
+    serviceUrl:
+      defaultZone: http://discovery1:8761/eureka/,http://discovery2:8762/eureka/
+
+zuul:
+  routes:
+    loginservice: /user/**
+
+logging:
+  level:
+    com.netflix: DEBUG
